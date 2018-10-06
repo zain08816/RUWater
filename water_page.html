@@ -23,14 +23,14 @@
 // Initialize and add the map
 var map, infoWindow;
 function initMap() {
-/* FILL THESE IN LATER WITH WATER BOTTLE REFILL LOCATIONS??
+
  var locations = [ 
-  ['Bondi Beach', -33.890542, 151.274856, 4],
-  ['Coogee Beach', -33.923036, 151.259052, 5],
-  ['Cronulla Beach', -34.028249, 151.157507, 3],
-  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-  ['Maroubra Beach', -33.950198, 151.259302, 1]
-];  */
+  ['Water Station CASC 1', -33.890542, 151.274856, 4],
+  ['Water Station CASC 2', -33.923036, 151.259052, 5],
+  ['Water Station Scott Hall 1', -34.028249, 151.157507, 3],
+  ['Water Station Scott Hall', 40.499988, -74.447349, 2],
+  ['Water Station CASC 1', 40.502790, -74.452190, 1]
+]; 
  
 map = new google.maps.Map(document.getElementById('map'), {
   center: new google.maps.LatLng(40.5008, 74.4474),
@@ -40,7 +40,7 @@ map = new google.maps.Map(document.getElementById('map'), {
 
 infoWindow = new google.maps.InfoWindow;
 
-/*var marker, i; 
+var marker, i; 
 
 for (i = 0; i < locations.length; i++) {  
   marker = new google.maps.Marker({
@@ -54,7 +54,7 @@ for (i = 0; i < locations.length; i++) {
       infowindow.open(map, marker);
     }
   })(marker, i));
-}  */
+}  
 if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -63,7 +63,7 @@ if (navigator.geolocation) {
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('Current location.');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
