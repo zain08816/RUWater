@@ -10,3 +10,7 @@ Very cool custom location markers.
 
 Artfully curated collection of water bottle refill locations CONFIRMED to exist. 
 
+Promotes the PUBLIC GOOD by reducing water bottle waste and curing dehydration!
+
+Great for Rutgers Students!
+
