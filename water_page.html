@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <style>
     body {
-      background-color:#6EDEFF;
+      background-color:#3362a8;
     }
       /* Set the size of the div element that contains the map */
       #map {
@@ -19,7 +19,7 @@
     </style>
   </head>
   <body>
-    <h3><center><font size="6"><font face="Papyrus"><font color="0008AA"> Your Location, and Nearby Water Refill Stations</font></center></h3>
+    <h3><center><font size="6"><font face="Verdana"><font color="#9ec3f4"> Find water refill stations nearby</font></center></h3>
     <div id="map"></div>
     <script>
 
@@ -28,7 +28,17 @@ var map, infoWindow;
 function initMap() {
 
  var locations = [ 
- //['Water Station ', 40., -74., 27],
+  /*['Water Station ', 40., -74., 27],
+  ['Water Station ', 40., -74., 27],
+  ['Water Station ', 40., -74., 27], */
+  ['Water Station Sony Werblin Recreation Center', 40.519405, -74.460780, 34],
+  ['Water Station Lucy Stone Hall', 40.522148, -74.434856, 33],
+  ['Water Station Louis Brown Athletic Center', 40.525266, -74.441594, 32],
+  ['Water Station Rutgers Business School', 40.523207, -74.440810, 31],
+  ['Water Station Beck Hall', 40.522743, -74.439313, 30],
+  ['Water Station Livingston Student Center', 40.523463, -74.437229, 29],
+  ['Water Station James Disckson Carr Libary', 40.522436, -74.437378, 28],
+  ['Water Station Tillet Hall', 40.521868, -74.436131, 27],
   ['Water Station ARC', 40.523838, -74.465272, 26],
   ['Water Station Science and Engineering Resource Center', 40.522816, -74.462809, 25],
   ['Water Station Busch Dining Hall', 40.522762, -74.457757, 24],
@@ -72,7 +82,7 @@ map = new google.maps.Map(document.getElementById('map'), {
             {
             featureType: 'landscape.man_made',
             elementType: 'geometry.fill',
-            stylers: [{color:'#707070'}]
+            stylers: [{color:'#36435d'}]
             },
             {
               featureType: 'administrative.locality',
