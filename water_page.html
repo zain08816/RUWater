@@ -32,7 +32,7 @@ function initMap() {
   ['Water Station ARC', 40.523838, -74.465272, 26],
   ['Water Station Science and Engineering Resource Center', 40.522816, -74.462809, 25],
   ['Water Station Busch Dining Hall', 40.522762, -74.457757, 24],
-  ['Water Station Busch Student Center', 40.523277, -74.458541, 23,
+  ['Water Station Busch Student Center', 40.523277, -74.458541, 23],
   ['Water Station Hill Center', 40.521849, -74.462216, 22],
   ['Water Station Physics Lecture Hall', 40.522428, -74.463444, 21],
   ['Water Station Douglass Student Center', 40.484842, -74.436801, 20],
@@ -65,12 +65,17 @@ map = new google.maps.Map(document.getElementById('map'), {
 
 infoWindow = new google.maps.InfoWindow;
 
-var marker, i; 
+var marker, i;
+var image = 'file:///C:/Users/Anthony/Downloads/427112.svg' ;
+
+
 
 for (i = 0; i < locations.length; i++) {  
   marker = new google.maps.Marker({
     position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-    map: map
+    map: map,
+      icon: image,
+
   });
 
   google.maps.event.addListener(marker, 'click', (function(marker, i) {
