@@ -65,6 +65,16 @@ map = new google.maps.Map(document.getElementById('map'), {
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
             {
+            featureType: 'landscape.man_made',
+            elementType: 'geometry',
+            stylers: [{color:'#696969'}]
+            },
+            {
+            featureType: 'landscape.man_made',
+            elementType: 'geometry.fill',
+            stylers: [{color:'#707070'}]
+            },
+            {
               featureType: 'administrative.locality',
               elementType: 'labels.text.fill',
               stylers: [{color: '#d59563'}]
@@ -73,6 +83,16 @@ map = new google.maps.Map(document.getElementById('map'), {
               featureType: 'poi',
               elementType: 'labels.text.fill',
               stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.school',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.icon',
+              stylers: [{visibility: 'off'}]
             },
             {
               featureType: 'poi.park',
@@ -140,7 +160,6 @@ map = new google.maps.Map(document.getElementById('map'), {
               stylers: [{color: '#17263c'}]
             }
           ]
-  
 });
 
 infoWindow = new google.maps.InfoWindow;
