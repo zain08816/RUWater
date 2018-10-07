@@ -12,4 +12,4 @@ Artfully curated collection of water bottle refill locations CONFIRMED to exist.
 
 Promotes the PUBLIC GOOD by reducing water bottle waste and curing dehydration!
 
-Great for Rutgers Students!
+Great for Rutgers Students, and anyone visiting the campus!
