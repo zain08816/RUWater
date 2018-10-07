@@ -28,11 +28,33 @@ var map, infoWindow;
 function initMap() {
 
  var locations = [ 
-  ['Water Station CASC 1', -33.890542, 151.274856, 4],
-  ['Water Station CASC 2', -33.923036, 151.259052, 5],
-  ['Water Station Scott Hall 1', -34.028249, 151.157507, 3],
+  //['Water Station ', 40., -74., 27],
+  ['Water Station ARC', 40.523838, -74.465272, 26],
+  ['Water Station Science and Engineering Resource Center', 40.522816, -74.462809, 25],
+  ['Water Station Busch Dining Hall', 40.522762, -74.457757, 24],
+  ['Water Station Busch Student Center', 40.523277, -74.458541, 23,
+  ['Water Station Hill Center', 40.521849, -74.462216, 22],
+  ['Water Station Physics Lecture Hall', 40.522428, -74.463444, 21],
+  ['Water Station Douglass Student Center', 40.484842, -74.436801, 20],
+  ['Water Station College Hall', 40.486611, -74.437221, 19],
+  ['Water Station Mason Gross School', 40.485373, -74.434666, 18],
+  ['Water Station Hickman Hall', 40.484656, -74.434491, 17],
+  ['Water Station Loree Classroom Building', 40.483396, -74.435384, 16],
+  ['Water Station Neilson Dining Hall', 40.481635, -74.431727, 15],
+  ['Water Station C/D Recreation Center', 40.478588, -74.432685, 14],
+  ['Water Station Cook Student Center', 40.479178, -74.431529, 13],
+  ['Water Station NJ Institute For Food, Nutrition, & Health', 40.479701, -74.435088, 12],
+  ['Water Station Murray Hall', 40.500554, -74.446616, 11],
+  ['Water Station Zimmerli Art Museum', 40.499861, -74.446029, 10],
+  ['Water Station Academic Building West', 40.501955, -74.448376, 9],
+  ['Water Station Academic Building East', 40.502238, -74.447985, 8],
+  ['Water Station Frelinghuysen Hall', 40.503242, -74.448340, 7],
+  ['Water Station Hardenbargh Hall', 40.504838, -74.449972, 6],
+  ['Water Station Alexander Library', 40.505228, -74.452482, 5],
+  ['Water Station CAC Gym', 40.503202, -74.452643, 4],
+  ['Water Station Brower', 40.503620, -74.451667, 3],
   ['Water Station Scott Hall', 40.499988, -74.447349, 2],
-  ['Water Station CASC 1', 40.502790, -74.452190, 1]
+  ['Water Station CASC', 40.502790, -74.452190, 1]
 ]; 
  
 map = new google.maps.Map(document.getElementById('map'), {
