@@ -1,4 +1,4 @@
-# RUWater
+# RUWater (GCP Key Removed)
 HackRU Fall 2018 (Best Rutgers Hack)
 
 # Hack
